@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Имя Фамилия — UX/UI дизайнер</title>
+  <meta name="description" content="Портфолио UX/UI дизайнера: проекты и концепты.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Manrope:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a class="profile" href="#top">
+        <img class="profile__avatar" src="assets/img/avatar.png" width="40" height="40" alt="">
+        <span class="profile__name">Катя Расторгуева</span>
+      </a>
+
+      <div class="header__actions">
+        <nav class="menu" id="site-menu" aria-label="Основное меню">
+          <a class="menu__link is-active" href="#projects" data-section="projects">Проекты</a>
+          <a class="menu__link" href="#concepts" data-section="concepts">Концепты</a>
+          <img class="menu__divider" src="assets/icons/divider.svg" width="28" height="1" alt="">
+          <a class="menu__link menu__link--ext" href="https://t.me/" target="_blank" rel="noopener">
+            Telegram <img src="assets/icons/arrow-up-right.svg" width="16" height="16" alt="">
+          </a>
+          <a class="menu__link menu__link--ext" href="https://hh.ru/" target="_blank" rel="noopener">
+            HeadHunter <img src="assets/icons/arrow-up-right.svg" width="16" height="16" alt="">
+          </a>
+          <button class="menu__link menu__link--ext" type="button" data-copy-email="hello@example.com" aria-label="Скопировать email">
+            Email <img src="assets/icons/mail.svg" width="16" height="16" alt="">
+          </button>
+        </nav>
+
+        <a class="button" href="https://disk.yandex.ru/i/RM1f1jxhlNV0Rg" download>
+          Резюме <img class="button__icon" src="assets/icons/arrow-white.svg" width="16" height="16" alt="">
+        </a>
+
+        <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="site-menu">
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top" class="container">
+    <section class="about">
+      <h1 class="about__title">
+        <span class="line"><span class="line__inner">UX/UI дизайнер с опытом <span class="accent">более 2 лет</span></span></span>
+        <span class="line"><span class="line__inner">в проектной и продуктовой разработке</span></span>
+      </h1>
+      <p class="about__text reveal" style="--delay: 450ms">
+        Проектировала с нуля и развивала веб-сайты и мобильные приложения для <span class="accent">B2C</span> и <span class="accent">B2B</span>, провела редизайн двух сервисов.<br>
+        Опыт адаптивной вёрстки сайтов помогает создавать интерфейсы, удобные для реализации.
+      </p>
+    </section>
+
+    <section id="projects" class="projects" aria-label="Проекты">
+      <a class="case reveal" href="case-new-school.html" style="--case-bg: #CBE9FC; --mock-w: 193.45%; --mock-h: 115.19%; --mock-l: -28.29%; --mock-t: -0.96%">
+        <div class="case__info">
+          <ul class="tags">
+            <li>B2C</li><li>EdTech</li><li>Web</li><li>Mobile App</li><li>2024</li>
+          </ul>
+          <div class="case__head">
+            <h2 class="case__title">Редизайн личного кабинета</h2>
+            <p class="case__meta">
+              <span class="case__client">Новая школа</span>
+              <img src="assets/icons/dot.svg" width="5" height="24" alt="">
+              <span class="case__link">thenewschool.ru</span>
+            </p>
+          </div>
+          <p class="case__text">Обновила дизайн главной страницы личных кабинетов ученика и родителя на платформе подготовки к ЕГЭ с аудиторией 2&nbsp;млн+ пользователей.</p>
+        </div>
+        <div class="case__image">
+          <div class="case__mockup">
+            <img src="assets/img/card-1-mockup.webp" alt="Макет личного кабинета Новой школы" loading="lazy">
+          </div>
+        </div>
+      </a>
+
+      <a class="case reveal" href="case-minidino.html" style="--case-bg: #CFEFD5; --mock-w: 186.29%; --mock-h: 105.58%; --mock-l: -38.57%; --mock-t: -1.92%">
+        <div class="case__info">
+          <ul class="tags">
+            <li>B2C</li><li>E-commerce</li><li>Web</li><li>Mobile App</li><li>2025</li>
+          </ul>
+          <div class="case__head">
+            <h2 class="case__title">Редизайн страниц продаж</h2>
+            <p class="case__meta">
+              <span class="case__client">Minidino</span>
+              <img src="assets/icons/dot.svg" width="5" height="24" alt="">
+              <span class="case__link">минидино.рф</span>
+            </p>
+          </div>
+          <p class="case__text">Обновила дизайн каталога и карточки товара сайта и приложения интернет-магазина детской одежды с 15 розничными магазинами и охватом 7&nbsp;млн+.</p>
+        </div>
+        <div class="case__image">
+          <div class="case__mockup">
+            <img src="assets/img/card-2-mockup.webp" alt="Макет карточки товара Minidino" loading="lazy">
+          </div>
+        </div>
+      </a>
+
+      <a class="case reveal" href="case-iasmos.html" style="--case-bg: #d3e5fa; --mock-w: 180.17%; --mock-h: 101.08%; --mock-l: -28.03%; --mock-t: -1.08%">
+        <div class="case__info">
+          <ul class="tags">
+            <li>B2C</li><li>B2C</li><li>E-commerce</li><li>Web</li><li>2026</li>
+          </ul>
+          <div class="case__head">
+            <h2 class="case__title">CRM для менеджеров</h2>
+            <p class="case__meta">
+              <span class="case__client">Iasmos</span>
+              <img src="assets/icons/dot.svg" width="5" height="24" alt="">
+              <span class="case__link">iasmos.fr</span>
+            </p>
+          </div>
+          <p class="case__text">Спроектировала с нуля интерфейс веб-приложения для менеджеров французской парфюмерной компании.</p>
+        </div>
+        <div class="case__image">
+          <div class="case__mockup">
+            <img src="assets/img/card-4-mockup.webp" alt="Макет CRM Iasmos" loading="lazy">
+          </div>
+        </div>
+      </a>
+
+      <a class="case reveal" href="case-sinftool.html" style="--case-bg: #BDE5E5; --mock-w: 220.42%; --mock-h: 112.5%; --mock-l: -75.35%; --mock-t: -0.96%">
+        <div class="case__info">
+          <ul class="tags">
+            <li>B2C</li><li>B2B</li><li>E-commerce</li><li>Web</li><li>2026</li>
+          </ul>
+          <div class="case__head">
+            <h2 class="case__title">Интернет-магазин</h2>
+            <p class="case__meta">
+              <span class="case__client">Sinftool</span>
+            </p>
+          </div>
+          <p class="case__text">Спроектировала с нуля интерфейс крупного интернет-магазина металлорежущего оборудования.</p>
+        </div>
+        <div class="case__image">
+          <div class="case__mockup">
+            <img src="assets/img/card-3-mockup.webp" alt="Макет интернет-магазина Sinftool" loading="lazy">
+          </div>
+        </div>
+      </a>
+    </section>
+
+    <section id="concepts" class="concepts">
+      <h2 class="concepts__title reveal">Концепты</h2>
+      <div class="concepts__grid">
+        <figure class="concept reveal">
+          <button class="concept__image" type="button" aria-label="Открыть: Образовательная онлайн-платформа. Главная"><img src="assets/img/concept-1.webp" alt="" loading="lazy"></button>
+          <figcaption>Образовательная онлайн-платформа. Главная</figcaption>
+        </figure>
+        <figure class="concept reveal" style="--delay: 120ms">
+          <button class="concept__image" type="button" aria-label="Открыть: Мобильное приложение с рецептами и трекером приемов пищи"><img src="assets/img/concept-2.webp" alt="" loading="lazy"></button>
+          <figcaption>Мобильное приложение с рецептами и трекером приемов пищи</figcaption>
+        </figure>
+        <figure class="concept reveal">
+          <button class="concept__image" type="button" aria-label="Открыть: Мобильное приложение для сети кофеен"><img src="assets/img/concept-3.webp" alt="" loading="lazy"></button>
+          <figcaption>Мобильное приложение для сети кофеен</figcaption>
+        </figure>
+        <figure class="concept reveal" style="--delay: 120ms">
+          <button class="concept__image" type="button" aria-label="Открыть: Образовательная онлайн-платформа. Личный кабинет"><img src="assets/img/concept-4.webp" alt="" loading="lazy"></button>
+          <figcaption>Образовательная онлайн-платформа. Личный кабинет</figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer container">
+    <p class="footer__title reveal">Открыта к сотрудничеству!</p>
+    <div class="footer__signature reveal">
+      <img src="assets/icons/signature.svg" width="271" height="52" alt="Для связи со мной">
+      <img class="footer__arrow" src="assets/icons/signature-arrow.svg" width="16" height="51" alt="">
+    </div>
+    <nav class="footer__menu reveal" aria-label="Контакты">
+      <a class="menu__link" href="https://t.me/" target="_blank" rel="noopener">Telegram</a>
+      <a class="menu__link" href="https://hh.ru/" target="_blank" rel="noopener">HeadHunter</a>
+      <button class="menu__link" type="button" data-copy-email="hello@example.com" aria-label="Скопировать email">Email <img src="assets/icons/mail.svg" width="16" height="16" alt=""></button>
+    </nav>
+  </footer>
+
+  <dialog class="lightbox" aria-label="Просмотр изображения">
+    <button class="lightbox__close" type="button" aria-label="Закрыть">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+        <path d="M4 4l12 12M16 4L4 16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+      </svg>
+    </button>
+    <img class="lightbox__image" src="" alt="">
+    <p class="lightbox__caption"></p>
+  </dialog>
+
+  <div class="toast" role="status" aria-live="polite">
+    <svg class="toast__icon" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+      <circle cx="10" cy="10" r="9" fill="#07BEB8"/>
+      <path d="M6 10.2l2.6 2.6L14 7.4" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <span class="toast__text">Email скопирован</span>
+    <button class="toast__close" type="button" aria-label="Закрыть уведомление">
+      <svg width="16" height="16" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+        <path d="M5 5l10 10M15 5L5 15" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+      </svg>
+    </button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

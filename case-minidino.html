@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Minidino — редизайн страниц продаж · Катя Расторгуева</title>
+  <meta name="description" content="Кейс: редизайн каталога и карточки товара интернет-магазина детской одежды Minidino.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a class="profile" href="index.html">
+        <img class="profile__avatar" src="assets/img/avatar.png" width="40" height="40" alt="">
+        <span class="profile__name">Катя Расторгуева</span>
+      </a>
+
+      <div class="header__actions">
+        <nav class="menu" id="site-menu" aria-label="Основное меню">
+          <a class="menu__link is-active" href="index.html#projects">Проекты</a>
+          <a class="menu__link" href="index.html#concepts">Концепты</a>
+          <img class="menu__divider" src="assets/icons/divider.svg" width="28" height="1" alt="">
+          <a class="menu__link menu__link--ext" href="https://t.me/" target="_blank" rel="noopener">
+            Telegram <img src="assets/icons/arrow-up-right.svg" width="16" height="16" alt="">
+          </a>
+          <a class="menu__link menu__link--ext" href="https://hh.ru/" target="_blank" rel="noopener">
+            HeadHunter <img src="assets/icons/arrow-up-right.svg" width="16" height="16" alt="">
+          </a>
+          <button class="menu__link menu__link--ext" type="button" data-copy-email="hello@example.com" aria-label="Скопировать email">
+            Email <img src="assets/icons/mail.svg" width="16" height="16" alt="">
+          </button>
+        </nav>
+
+        <a class="button" href="https://disk.yandex.ru/i/RM1f1jxhlNV0Rg" download>
+          Резюме <img class="button__icon" src="assets/icons/arrow-white.svg" width="16" height="16" alt="">
+        </a>
+
+        <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="site-menu">
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container case-page">
+    <div class="case-hero">
+      <img class="case-hero__bg" src="assets/case-2/hero-bg.png" alt="">
+      <div class="case-hero__mockup" style="--hero-w: 140.83%; --hero-h: 107.8%; --hero-l: -17.95%; --hero-t: -2.04%">
+        <img src="assets/img/card-2-mockup.webp" alt="Карточка товара Minidino на ноутбуке">
+      </div>
+      <a class="case-hero__back" href="index.html#projects" aria-label="Назад к проектам">
+        <img src="assets/icons/arrow-left.svg" width="24" height="24" alt="">
+        <img class="case-hero__corner case-hero__corner--top" src="assets/icons/corner.svg" width="12" height="12" alt="">
+        <img class="case-hero__corner case-hero__corner--right" src="assets/icons/corner.svg" width="12" height="12" alt="">
+      </a>
+    </div>
+
+    <section class="case-row case-row--intro">
+      <div class="case-row__aside reveal">
+        <h1 class="case-intro__title">Minidino</h1>
+        <a class="case-intro__link" href="https://минидино.рф" target="_blank" rel="noopener">минидино.рф</a>
+        <p class="case-intro__meta">UX/UI, Adaptive web, B2C, E-commerce, 2025</p>
+      </div>
+      <div class="case-row__body reveal" style="--delay: 120ms">
+        <h3>Контекст</h3>
+        <div class="case-text">
+          <p>Интернет-магазин детской одежды с розничной сетью из 15 магазинов в Сибири и Москве и онлайн-охватом 7&nbsp;млн.</p>
+          <p>В рамках проекта потребовалось пересмотреть структуру ключевых страниц продаж и обновить их дизайн.</p>
+        </div>
+        <h3>Цель</h3>
+        <div class="case-text">
+          <p>Пересобрать структуру каталога и карточки товара на основе анализа текущих сценариев и конкурентов, создать новый интерфейс для сайта и мобильного приложения и собрать масштабируемый UI-kit для передачи в разработку.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-row">
+      <div class="case-row__aside reveal">
+        <h2 class="case-row__title">Каталог товаров</h2>
+      </div>
+      <div class="case-row__body reveal" style="--delay: 120ms">
+        <h3>Процесс</h3>
+        <div class="case-text">
+          <p>Начала работу с анализа текущих пользовательских сценариев и сайтов конкурентов. Изучила, как устроены каталоги интернет-магазинов схожего сегмента, и на этой основе выявила слабые места текущей версии: что неудобно покупателю и какой информации ему не хватает на первом шаге выбора.</p>
+          <p>Добавила слева разделы каталога, чтобы покупатель мог переключаться между категориями, не возвращаясь в меню. В карточке товара изменила компоновку элементов и добавила цвета, теперь доступные расцветки видны ещё до перехода в товар. Фильтр переработала и вынесла в выдвижную панель.</p>
+          <p>Новые элементы собрала в UI-kit в стиле основного сайта, чтобы интерфейсы сайта и мобильного приложения оставались единообразными, а разработчики могли переиспользовать готовые компоненты. Подготовила адаптивные версии макетов для десктопа, планшета и мобильных устройств. После передачи макетов в разработку сопровождала команду на этапе реализации.</p>
+        </div>
+        <h3>Результат</h3>
+        <div class="case-text">
+          <p>Покупатель быстрее ориентируется в ассортименте товаров. Интерфейс, собранный в UI-kit, сохраняет единый визуал на сайте, и в мобильном приложении.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="case-gallery">
+      <button class="case-shot case-shot--wide reveal" type="button" data-lightbox data-caption="Каталог товаров. Десктоп" style="--ratio: 1200 / 731">
+        <img src="assets/case-2/catalog-desktop.webp" width="1200" height="731" alt="" loading="lazy">
+      </button>
+      <div class="case-gallery__pair">
+        <button class="case-shot reveal" type="button" data-lightbox data-caption="Каталог товаров. Мобильная версия">
+          <img src="assets/case-2/catalog-mobile-1.webp" width="590" height="590" alt="" loading="lazy">
+        </button>
+        <button class="case-shot reveal" type="button" data-lightbox data-caption="Фильтр каталога. Мобильная версия" style="--delay: 120ms">
+          <img src="assets/case-2/catalog-mobile-2.webp" width="590" height="590" alt="" loading="lazy">
+        </button>
+      </div>
+    </div>
+
+    <section class="case-row">
+      <div class="case-row__aside reveal">
+        <h2 class="case-row__title">Детальная страница товара</h2>
+      </div>
+      <div class="case-row__body reveal" style="--delay: 120ms">
+        <h3>Процесс</h3>
+        <div class="case-text">
+          <p>Пересобрала структуру страницы, чтобы ключевая информация о товаре была видна на первом экране, а не терялась среди фотографий, растянутых на несколько экранов как в старой версии. Добавила данные, которые помогают принять решение без лишних шагов, включая условия доставки и оплаты, описание и состав. Внизу страницы разместила подборку похожих товаров, чтобы покупатель мог продолжить выбор, не возвращаясь в каталог.</p>
+          <p>Новые элементы собрала в UI-kit в стиле основного сайта, чтобы интерфейсы сайта и мобильного приложения оставались единообразными, а разработчики могли переиспользовать готовые компоненты. Подготовила адаптивные версии макетов для десктопа, планшета и мобильных устройств. После передачи макетов в разработку сопровождала команду на этапе реализации.</p>
+        </div>
+        <h3>Результат</h3>
+        <div class="case-text">
+          <p>Покупатель видит ключевую информацию о товаре на первом экране и может принять решение о покупке, не уходя со страницы.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="case-gallery case-gallery--last">
+      <button class="case-shot case-shot--wide reveal" type="button" data-lightbox data-caption="Детальная страница товара. Десктоп" style="--ratio: 1200 / 1027">
+        <img src="assets/case-2/product-desktop.webp" width="1200" height="1027" alt="" loading="lazy">
+      </button>
+      <div class="case-gallery__pair">
+        <button class="case-shot reveal" type="button" data-lightbox data-caption="Детальная страница товара. Мобильная версия">
+          <img src="assets/case-2/product-mobile-1.webp" width="590" height="590" alt="" loading="lazy">
+        </button>
+        <button class="case-shot reveal" type="button" data-lightbox data-caption="Оплата частями в карточке товара" style="--delay: 120ms">
+          <img src="assets/case-2/product-mobile-2.webp" width="590" height="590" alt="" loading="lazy">
+        </button>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="footer container">
+    <p class="footer__title reveal">Открыта к сотрудничеству!</p>
+    <div class="footer__signature reveal">
+      <img src="assets/icons/signature.svg" width="271" height="52" alt="Для связи со мной">
+      <img class="footer__arrow" src="assets/icons/signature-arrow.svg" width="16" height="51" alt="">
+    </div>
+    <nav class="footer__menu reveal" aria-label="Контакты">
+      <a class="menu__link" href="https://t.me/" target="_blank" rel="noopener">Telegram</a>
+      <a class="menu__link" href="https://hh.ru/" target="_blank" rel="noopener">HeadHunter</a>
+      <button class="menu__link" type="button" data-copy-email="hello@example.com" aria-label="Скопировать email">Email <img src="assets/icons/mail.svg" width="16" height="16" alt=""></button>
+    </nav>
+  </footer>
+
+  <dialog class="lightbox" aria-label="Просмотр изображения">
+    <button class="lightbox__close" type="button" aria-label="Закрыть">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+        <path d="M4 4l12 12M16 4L4 16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+      </svg>
+    </button>
+    <img class="lightbox__image" src="" alt="">
+    <p class="lightbox__caption"></p>
+  </dialog>
+
+  <div class="toast" role="status" aria-live="polite">
+    <svg class="toast__icon" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+      <circle cx="10" cy="10" r="9" fill="#07BEB8"/>
+      <path d="M6 10.2l2.6 2.6L14 7.4" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <span class="toast__text">Email скопирован</span>
+    <button class="toast__close" type="button" aria-label="Закрыть уведомление">
+      <svg width="16" height="16" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+        <path d="M5 5l10 10M15 5L5 15" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+      </svg>
+    </button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
